@@ -1,11 +1,11 @@
 /*!
- * SimplerProgress.js v1.0.0
+ * SimplerProgress.js v0.0.1
  * https://195075595.github.io
  *
  * Copyright 2023-present wangyf1024
  * Released under the ISC license
  *
- * Date: 2023-03-23T00:48:22.880Z
+ * Date: 2023-03-23T03:46:04.258Z
  */
 
 function _classCallCheck(instance, Constructor) {

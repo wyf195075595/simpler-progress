@@ -22,6 +22,6 @@ jobs:
       # 安装依赖命令
       - name: npm install
         run: yarn install
-      # 执行打包命令
+      # 执行打包命令 yarn rollup -c
       - name: build
-        run: yarn rollup -c
+        run: npx rollup -c
