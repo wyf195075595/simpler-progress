@@ -32,4 +32,4 @@ jobs:
           REPO: self
           BRANCH: gh-pages
           FOLDER: dist
-          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_PRIVATE_KEY }}
