@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '16'
       # 安装依赖命令
-      - name: npm install
+      - name: install
         run: yarn install
       # 执行打包命令 yarn rollup -c
       - name: build
