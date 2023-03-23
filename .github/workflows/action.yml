@@ -11,11 +11,11 @@ jobs:
       # 新建一个名为checkout_actions的步骤
       - name: checkout_actions
         #使用checkout@v2这个action获取源码
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v3
       # 使用建一个名为setup-node的步骤
       - name: setup-node
         # 使用setup-node@v1这个action
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         # 指定某个action 可能需要输入的参数
         with:
           node-version: '16'
