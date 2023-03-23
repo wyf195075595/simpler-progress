@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v3
         # 指定某个action 可能需要输入的参数
         with:
-          node-version: '16'
+          node-version: 16
       # 安装依赖命令
       - name: install
         run: yarn install
