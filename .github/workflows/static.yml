@@ -28,18 +28,18 @@ jobs:
         run: yarn rollup -c
       # 上传dist文件
       - name: Upload artifact
-          uses: actions/upload-pages-artifact@v1
-          with:
-            # Upload entire repository
-            path: 'dist'
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: 'dist'
       # 将main分支dist推送到分支 gh-pages
       - name: Deploy
-          id: deployment
-          uses: actions/deploy-pages@v1
-          with:
-            GITHUB_TOKEN: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-            BRANCH: gh-pages
-            FOLDER: dist
+        id: deployment
+        uses: actions/deploy-pages@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+          BRANCH: gh-pages
+          FOLDER: dist
 
 
 # # Simple workflow for deploying static content to GitHub Pages
